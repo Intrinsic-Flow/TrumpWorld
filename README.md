@@ -3,8 +3,8 @@ Grakn.ai TrumpWorld example for CORE 1.5.0 and Workbase 1.2.0
 
 ## Installation
 
-Get GRAKN.AI CORE 1.5.0 from - https://grakn.ai/download
-Get GRAKN Workbase 1.2.0 from - https://github.com/graknlabs/workbase/releases
+- Get GRAKN.AI CORE 1.5.0 from - https://grakn.ai/download
+- Get GRAKN Workbase 1.2.0 from - https://github.com/graknlabs/workbase/releases
 
 Once you have installed both of these download the files from this github and place in a directory.
 
