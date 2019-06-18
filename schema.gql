@@ -1,0 +1,53 @@
+define
+
+#############################
+## Attributes              ##
+#############################
+
+    # person-name sub attribute, datatype string;
+    # org-name sub attribute, datatype string;
+    name sub attribute, datatype string;
+    description sub attribute, datatype string;
+    source sub attribute, datatype string;
+
+#############################
+## Generic Types           ##
+#############################
+
+    person sub entity,
+      has name,
+	    plays person-connection,
+      plays person-a,
+      plays person-b;
+
+    organisation sub entity,
+      has name,
+	    plays organisation-connection,
+      plays organisation-a,
+      plays organisation-b;
+
+##############################
+## Connections              ##
+##############################
+
+    connection sub relation,
+      abstract,
+	    has description,
+	    has source;
+
+    person-person sub connection,
+      relates person-a,
+      relates person-b;
+
+    organisation-organisation sub connection,
+      relates organisation-a,
+      relates organisation-b;
+
+    person-organisation sub connection,
+      relates person-connection,
+      relates organisation-connection;
+
+    organisation-a sub organisation-connection;
+    organisation-b sub organisation-connection;
+    person-a sub person-connection;
+    person-b sub person-connection;
